@@ -57,7 +57,7 @@ module.exports = (robot) ->
     mapType  = msg.match[1] or "roadmap"
     location = encodeURIComponent(msg.match[3])
     mapUrl   = "http://maps.google.com/maps/api/staticmap?markers=" +
-                escape(location) +
+                location +
                 "&size=400x400&maptype=" +
                 mapType +
                 "&sensor=false" +
