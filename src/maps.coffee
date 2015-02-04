@@ -61,7 +61,8 @@ module.exports = (robot) ->
                 "&size=400x400&maptype=" +
                 mapType +
                 "&sensor=false" +
-                "&format=png" # So campfire knows it's an image
+                "&format=png" + # So campfire knows it's an image
+                "&blah=.png" + # So certain IRC clients know it's an image (Limechat)
     url      = "http://maps.google.com/maps?q=" +
               location +
               "&hl=en&sll=37.0625,-95.677068&sspn=73.579623,100.371094&vpsrc=0&hnear=" +
